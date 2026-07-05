@@ -1,0 +1,68 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Fornecedor {
+  id        Int       @id @default(autoincrement())
+  nome      String    @db.VarChar(255)
+  contato   String?   @db.VarChar(255)
+  endereco  String?   @db.VarChar(255)
+  produtos  Product[]
+
+  @@map("fornecedor")
+}
+
+model Product {
+  id               Int         @id @default(autoincrement())
+  nome             String      @db.VarChar(255)
+  descricao        String?
+
+  dataDeCompra     DateTime?   @map("datadecompra") @db.Timestamp(6)
+  dataValidade     DateTime?   @map("datavalidade") @db.Timestamp(6)
+
+  quantidade       Int         @default(0)
+  quantidademinima Int         @default(5)
+
+  preco            Float?
+
+  categoriaId      Int?
+  categoria        Categoria?  @relation(fields: [categoriaId], references: [id])
+
+  fornecedorId     Int?        @map("fornecedorid")
+  fornecedor       Fornecedor? @relation(fields: [fornecedorId], references: [id], onUpdate: NoAction, map: "fk_fornecedor")
+
+  movimentacoes Movimentacao[]
+
+  @@map("produto")
+}
+model Categoria {
+  id       Int       @id @default(autoincrement())
+  nome     String    @unique
+  produtos Product[]
+}
+model Movimentacao {
+  id         Int      @id @default(autoincrement())
+  produtoId  Int
+  produto    Product  @relation(fields: [produtoId], references: [id], onDelete: Cascade)
+
+  tipo        TipoMovimentacao
+
+  quantidade  Int
+
+  observacao  String?
+
+  createdAt   DateTime @default(now())
+
+  @@map("movimentacao")
+}
+
+enum TipoMovimentacao {
+  ENTRADA
+  SAIDA
+  AJUSTE
+}

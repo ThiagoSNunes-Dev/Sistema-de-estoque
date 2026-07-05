@@ -1,78 +1,36 @@
-# 📦 Sistema de Gerenciamento de Estoque
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Sistema desenvolvido para facilitar o controle de estoque de produtos, permitindo acompanhar entradas, saídas, validade dos itens e geração de relatórios.
+## Getting Started
 
-## Funcionalidades
-
-- Cadastro de produtos
-- Cadastro de categorias
-- Controle de estoque
-- Entrada, saída e ajuste de produtos
-- Histórico de movimentações
-- Dashboard com indicadores
-- Alertas de estoque baixo
-- Alertas de produtos vencidos
-- Alertas de produtos próximos da validade
-- Pesquisa e filtros de produtos
-- Relatórios
-- Exportação de dados
-
-## Tecnologias utilizadas
-
-- Next.js
-- React
-- TypeScript
-- Prisma ORM
-- SQLite
-- Tailwind CSS
-- Zod
-- Lucide React
-
-## Estrutura do sistema
-
-- Dashboard
-- Produtos
-- Categorias
-- Movimentações
-- Alertas
-- Relatórios
-
-## Instalação
-
-Clone o projeto
-
-```bash
-git clone https://github.com/seuusuario/inventory-management-system.git
-```
-
-Instale as dependências
-
-```bash
-npm install
-```
-
-Configure o banco
-
-```bash
-npx prisma migrate dev
-```
-
-Execute o projeto
+First, run the development server:
 
 ```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-Acesse
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-```
-http://localhost:3000
-```
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Objetivo
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-O projeto foi desenvolvido com fins acadêmicos para aplicar conceitos de desenvolvimento web full stack utilizando Next.js, React e Prisma ORM, implementando um sistema completo de gerenciamento de estoque.
+## Learn More
 
-## Autor
+To learn more about Next.js, take a look at the following resources:
 
-Thiago S. Nunes
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
