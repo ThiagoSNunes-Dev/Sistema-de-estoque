@@ -1,36 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📦 Sistema de Gerenciamento de Estoque
 
-## Getting Started
+Sistema web para gerenciamento de estoque desenvolvido com **Next.js**, **React**, **TypeScript**, **Prisma ORM** e **PostgreSQL**. O projeto tem como objetivo facilitar o controle de produtos, categorias e fornecedores, oferecendo uma interface moderna e intuitiva para pequenos e médios negócios.
 
-First, run the development server:
+## ✨ Funcionalidades
+
+- 📋 Cadastro, edição e exclusão de produtos
+- 📦 Controle da quantidade em estoque
+- ⚠️ Definição de estoque mínimo
+- 🗂️ Gerenciamento de categorias
+- 🚚 Cadastro de fornecedores
+- 📅 Controle de data de compra e validade
+- 💰 Registro do preço dos produtos
+- 🔍 Pesquisa e organização dos itens
+- 📱 Interface responsiva
+
+## 🛠️ Tecnologias Utilizadas
+
+- Next.js
+- React
+- TypeScript
+- Prisma ORM
+- PostgreSQL
+- Tailwind CSS
+- Zod
+
+## 📂 Estrutura do Projeto
+
+```
+app/
+components/
+lib/
+prisma/
+public/
+```
+
+## 🚀 Como executar o projeto
+
+### 1. Clone o repositório
+
+```bash
+git clone https://github.com/seu-usuario/seu-repositorio.git
+```
+
+### 2. Entre na pasta
+
+```bash
+cd seu-repositorio
+```
+
+### 3. Instale as dependências
+
+```bash
+npm install
+```
+
+### 4. Configure as variáveis de ambiente
+
+Crie um arquivo `.env` na raiz do projeto:
+
+```env
+DATABASE_URL="sua-string-de-conexao"
+```
+
+### 5. Execute as migrações
+
+```bash
+npx prisma migrate dev
+```
+
+### 6. Inicie o projeto
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+A aplicação estará disponível em:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🗄️ Banco de Dados
 
-## Learn More
+O sistema utiliza **PostgreSQL** como banco de dados e o **Prisma ORM** para manipulação das informações.
 
-To learn more about Next.js, take a look at the following resources:
+As principais entidades são:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Produto
+- Categoria
+- Fornecedor
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Objetivo
 
-## Deploy on Vercel
+O projeto foi desenvolvido com foco em fornecer uma solução simples, eficiente e de baixo custo para o gerenciamento de estoque, permitindo maior organização dos produtos e redução de perdas por falta de controle.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📸 Demonstração
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Adicione aqui imagens ou GIFs do sistema.
+
+Exemplo:
+
+```
+/public/images/home.png
+/public/images/produtos.png
+/public/images/categorias.png
+```
+
+## 🔮 Melhorias Futuras
+
+- Sistema de autenticação
+- Controle de usuários
+- Dashboard com gráficos
+- Relatórios em PDF
+- Exportação para Excel
+- Histórico de movimentações
+- Controle de vendas
+
+## 👨‍💻 Autor
+
+Desenvolvido por **Thiago**.
+
+---
+
+⭐ Caso este projeto seja útil, deixe uma estrela no repositório!
