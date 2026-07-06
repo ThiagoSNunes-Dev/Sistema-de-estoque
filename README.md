@@ -1,4 +1,4 @@
-# 📦 Sistema de Gerenciamento de Estoque
+<img width="1920" height="951" alt="image" src="https://github.com/user-attachments/assets/f4e6f774-5f2f-4d26-ad2c-ef0d1f920153" /># 📦 Sistema de Gerenciamento de Estoque
 
 Sistema web para gerenciamento de estoque desenvolvido com **Next.js**, **React**, **TypeScript**, **Prisma ORM** e **PostgreSQL**. O projeto tem como objetivo facilitar o controle de produtos, categorias e fornecedores, oferecendo uma interface moderna e intuitiva para pequenos e médios negócios.
 
@@ -96,14 +96,16 @@ O projeto foi desenvolvido com foco em fornecer uma solução simples, eficiente
 
 ## 📸 Demonstração
 
-Adicione aqui imagens ou GIFs do sistema.
-
 Exemplo:
 
 ```
-/public/images/home.png
-/public/images/produtos.png
-/public/images/categorias.png
+<img width="1920" height="951" alt="image" src="https://github.com/user-attachments/assets/9866ac77-c8f2-4331-b92d-ee2c76b0a985" />
+<img width="1903" height="948" alt="image" src="https://github.com/user-attachments/assets/8534b1a2-5339-4a43-9fdf-7db0e9367833" />
+<img width="1895" height="947" alt="image" src="https://github.com/user-attachments/assets/c2523c7c-7627-414a-99a6-655798933655" />
+<img width="1901" height="944" alt="image" src="https://github.com/user-attachments/assets/12b01902-fe7b-4484-bc56-325fae38d877" />
+<img width="1899" height="944" alt="image" src="https://github.com/user-attachments/assets/9f73f325-ed21-4550-aaf1-a1bd3a00198f" />
+<img width="1919" height="949" alt="image" src="https://github.com/user-attachments/assets/69e03cc3-3b7b-4840-a663-1810db96ddec" />
+
 ```
 
 ## 🔮 Melhorias Futuras
